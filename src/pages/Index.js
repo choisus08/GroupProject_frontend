@@ -7,7 +7,7 @@ function Index(props) {
   return (
     <div>
       <h2 className="indexForm">New Entry</h2>
-      <Form classname="indexForm" action="/create" method="post">
+      <Form className="indexForm" action="/create" method="post">
         <input type="text" name="location" placeholder="Location" />
         <input type="text" name="landmark" placeholder="Landmark" />
         <input type="text" name="image" placeholder="Picture" />
@@ -16,7 +16,6 @@ function Index(props) {
       </Form>
       {entries.map((entry, index) => {
         return (
-          <div className="card">
             <div key={entry._id}>
               <Link to={`/${entry._id}`}>
                 <h4>{entry.location}</h4>
@@ -25,9 +24,10 @@ function Index(props) {
               <img src={entry.image} alt={entry.location} />
               <h4>{entry.dates}</h4>
             </div>
-          </div>
         )
       })}
     </div>
   );
 }
+
+export default Index;
