@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 
 function Header(props) {
-  return <div className="nav">
+  return <nav className="nav">
     <Link to="/">
       <div>Travelog</div>
     </Link>
-  </div>
+  </nav>
 }
 
 export default Header
