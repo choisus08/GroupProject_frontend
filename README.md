@@ -22,6 +22,22 @@ components, router, loaders, pages (index, show), index, App-- how do these file
 - CSS/SASS
 - Google Fonts
 
+## React Routes
+
+| NAME | PATH |
+|------|------|
+| INDEX | / |
+| SHOW | /:id | 
+| CREATE | /create |
+| UPDATE | /update/:id | 
+| DELETE | /delete/:id| 
+
+## Components
+- Header.js
+- Index.js
+- Main.js
+- Show.js
+
 ## Installation
 - `Fork` and `clone` this respository
 - `cd` into the directory on your local machine
