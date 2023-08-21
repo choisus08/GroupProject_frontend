@@ -44,5 +44,5 @@ components, router, loaders, pages (index, show), index, App-- how do these file
 - Open this repository in your code editor and run the code `npm start` to open the React app in your browser
 
 ## Mockup of UI <br>
--Desktop View <img src="./mockup.png" alt="three-diary-entries-illustrated"> <br>
+-Desktop View <img src="./public/mockup.png" alt="three-diary-entries-illustrated"> <br>
 -Mobile View <img src="" alt="">
