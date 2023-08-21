@@ -22,7 +22,7 @@ export const createAction = async ({request}) => {
         body: JSON.stringify(newEntry)
     })
     // redirect the user back to the frontend index route
-    return redirect('/')
+    return redirect('/dashboard')
 };
 
 export const updateAction = async ({request, params}) => {
@@ -57,9 +57,61 @@ export const deleteAction = async ({params}) => {
     // send the delete request to backend API
     await fetch (`${baseUrl}/travel/${id}`, {
         // tell fetch to make a delete request
-        method: "DELETE"
+        method: "DELETE",
+        credentials: 'include'
         //no headers or body required 
     })
     // redirect back to the frontend index route
-    return redirect('/')
+    return redirect('/dashboard')
+};
+
+export const signupAction = async ({request}) => {
+    // get the form data
+    const formData = await request.formData()
+    // build out the new user
+    const newUser = {
+        username: formData.get('username'),
+        password: formData.get('password')
+    }
+    // send the new user to our backend API
+    const response = await fetch (`${baseUrl}/signup`, {
+        method: "POST",
+        headers: {
+            "Content-type": 'application/json'
+        },
+        body: JSON.stringify(newUser)
+    })
+
+    // check if status is 400 or more
+    if (response.status >= 400) {
+        // alert the details of the error
+        alert(response.statusText)
+        // redirect back to the frontend signup route
+        return redirect('/signup')
+    }
+    // redirect back to the frontend login route
+    return redirect('/login')
+};
+
+export const loginAction = async ({request}) => {
+    const formData = await request.formData()
+    const user = {
+        username: formData.get('username'),
+        password: formData.get('password')
+    }
+    const response = await fetch(`${baseUrl}/login`, {
+        method: "POST",
+        credentials: 'include',
+        headers: {
+            "Content-type": "application/json"
+        },
+        body: JSON.stringify(user)
+    })
+
+    if (response.status >= 400) {
+        alert(response.statusText)
+        return redirect('/login')
+    }
+    localStorage.setItem('loggedIn', JSON.stringify({status: true}))
+    return redirect('/dashboard')
 };
