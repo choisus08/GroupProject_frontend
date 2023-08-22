@@ -14,6 +14,7 @@ export const createAction = async ({request}) => {
     await fetch (`${baseUrl}/travel`, {
         // tell fetch to make a post request
         method: "POST",
+        credentials: 'include',
         headers: {
             // tells our backend the data is json
             "Content-Type": "application/json"
@@ -41,6 +42,7 @@ export const updateAction = async ({request, params}) => {
     await fetch (`${baseUrl}/travel/${id}`, {
         // tell fetch to make a put request
         method: "PUT",
+        credentials: 'include',
         headers: {
             "Content-Type": "application/json"
         },
