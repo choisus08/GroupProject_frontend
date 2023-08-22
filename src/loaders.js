@@ -26,7 +26,7 @@ export const entriesLoader = async () => {
 export const entryLoader = async ({params}) => {
     if (!authCheck()) {
         return redirect('/login')
-    };
+    }
     // get the id param from the params object
     const id = params.id
     // make a call to backend show route
