@@ -8,7 +8,7 @@ function Show(props) {
       
       <h4>{entry.location}</h4>
       <h4>{entry.landmark}</h4>
-      <img src={entry.image} alt={entry.location} />
+      <img className="showImage" src={entry.image} alt={entry.location} />
       <h4>{entry.dates}</h4>
     
      <h3>Update {entry.location}</h3>
