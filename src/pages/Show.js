@@ -12,7 +12,7 @@ function Show(props) {
       <h4>{entry.dates}</h4>
     
      <h3>Update {entry.location}</h3>
-     <Form action={`/update/${entry._id}`} method='post'>
+     <Form className="showForm" action={`/update/${entry._id}`} method='post'>
         <input type="text" name="location" placeholder="location name" defaultValue={entry.location}/>
         <input type="text" name="landmark" placeholder="landmark name" defaultValue={entry.landmark}/>
         <input type="text" name="dates" placeholder="dates" defaultValue={entry.dates}/>

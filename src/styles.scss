@@ -23,24 +23,35 @@
   gap: 2em;
 }
 
-.signup, .login {
-    border-radius: 25px;
-    border: none;
-    padding: .5em;
-    width: 10em;
-    background-color: rgb(27, 104, 155);
-    color: white;
+.signup,
+.login {
+  border-radius: 25px;
+  border: none;
+  padding: .5em;
+  width: 10em;
+  background-color: rgb(27, 104, 155);
+  color: white;
 }
 
-.signupForm, .loginForm {
-    text-align: center;
-    padding: 0 0 3em 0;
+.signupForm,
+.loginForm {
+  text-align: center;
+  padding: 0 0 3em 0;
 }
 
 .nav {
   text-align: center;
   font-size: 30px;
   font-family: 'Pacifico', cursive;
+}
+
+a:link,
+a:visited {
+  color: rgb(27, 104, 155)
+}
+
+a:hover {
+  color: lightsalmon;
 }
 
 .index {
@@ -51,12 +62,17 @@
   background-position-y: top;
 }
 
-.indexForm {
+.indexForm,
+.showForm {
   text-align: center;
 }
 
-h2 {
+
+h2,
+h3,
+h4 {
   font-family: 'Nunito', sans-serif;
+  color: rgb(27, 104, 155);
 }
 
 .entries {
@@ -66,6 +82,10 @@ h2 {
   text-align: center;
   margin: 2em;
   font-family: 'Nunito', sans-serif;
+}
+
+.show {
+  text-align: center;
 }
 
 .image {
