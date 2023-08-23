@@ -6,8 +6,8 @@ function Main(props) {
   return <div>
     <Lottie className="sunAnimation" animationData={Sun} />
         <div className="loginButtons">
-        <Link to="/signup"><button>Signup</button></Link>
-        <Link to="/login"><button>Login</button></Link>
+        <Link to="/signup"><button className="signup">Sign Up</button></Link>
+        <Link to="/login"><button className="login">Login</button></Link>
         </div>
     
     <Outlet />
