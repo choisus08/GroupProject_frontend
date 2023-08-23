@@ -5,7 +5,7 @@ function Index(props) {
   const entries = useLoaderData();
   const navigate = useNavigate();
   return (
-    <div>
+    <div className="index">
       <button className="logout" onClick={async () => {
         await fetch(`${baseUrl}/logout`)
         localStorage.removeItem('loggedIn')
