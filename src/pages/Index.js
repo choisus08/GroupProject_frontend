@@ -8,7 +8,7 @@ function Index(props) {
     <div>
       <button onClick={async () => {
         await fetch(`${baseUrl}/logout`)
-        localStorage.removeItem('logedIn')
+        localStorage.removeItem('loggedIn')
         navigate("/")
       }}>Logout</button>
       <div className="indexForm">
