@@ -79,7 +79,7 @@ export const signupAction = async ({request}) => {
     const response = await fetch (`${baseUrl}/signup`, {
         method: "POST",
         headers: {
-            "Content-type": 'application/json'
+            "Content-Type": 'application/json'
         },
         body: JSON.stringify(newUser)
     })
@@ -103,13 +103,12 @@ export const loginAction = async ({request}) => {
     }
     const response = await fetch(`${baseUrl}/login`, {
         method: "POST",
-        credentials: 'include',
+        credentials: "include",
         headers: {
-            "Content-type": "application/json"
+            "Content-Type": "application/json"
         },
         body: JSON.stringify(user)
     })
-
     if (response.status >= 400) {
         alert(response.statusText)
         return redirect('/login')
