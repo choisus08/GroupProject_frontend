@@ -13,19 +13,33 @@
 
 .sunAnimation {
   width: 70vw;
-  margin: 5em auto;
+  margin: 2em auto;
 }
 
 .loginButtons {
   padding: 1em;
   display: flex;
   justify-content: center;
+  gap: 2em;
+}
+
+.signup, .login {
+    border-radius: 25px;
+    border: none;
+    padding: .5em;
+    width: 10em;
+    background-color: rgb(27, 104, 155);
+    color: white;
+}
+
+.signupForm, .loginForm {
+    text-align: center;
+    padding: 0 0 3em 0;
 }
 
 .nav {
   text-align: center;
   font-size: 30px;
-  text-decoration: none;
   font-family: 'Pacifico', cursive;
 }
 
@@ -46,9 +60,6 @@ h2 {
 }
 
 .entries {
-  // display: flex;
-  // justify-content: center;
-
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1em;
