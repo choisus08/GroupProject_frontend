@@ -5,9 +5,10 @@ function Show(props) {
 
   return (
     <div className="show">
+      
       <h4>{entry.location}</h4>
       <h4>{entry.landmark}</h4>
-      <img src={entry.landmark} alt={entry.location} />
+      <img src={entry.image} alt={entry.location} />
       <h4>{entry.dates}</h4>
     
      <h3>Update {entry.location}</h3>

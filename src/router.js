@@ -15,7 +15,7 @@ const router = createBrowserRouter(createRoutesFromElements(
             <Route path='login' element={<Login/>} action={loginAction} />
         </Route>
         <Route path=':id' element={<Show/>} loader={entryLoader} />
-        <Route path='/create' action={createAction} />
+        <Route path='create' action={createAction} />
         <Route path='update/:id' action={updateAction} />
         <Route path='delete/:id' action={deleteAction} />
         <Route path='dashboard' element={<Index/>} loader={entriesLoader} />
