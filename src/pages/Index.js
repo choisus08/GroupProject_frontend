@@ -5,8 +5,8 @@ function Index(props) {
   const entries = useLoaderData();
   const navigate = useNavigate();
   return (
-    <div>
-      <button onClick={async () => {
+    <div className="index">
+      <button className="logout" onClick={async () => {
         await fetch(`${baseUrl}/logout`)
         localStorage.removeItem('loggedIn')
         navigate("/")
@@ -29,7 +29,7 @@ function Index(props) {
                 <h4>{entry.location}</h4>
               </Link>
               <h4>{entry.landmark}</h4>
-              <img src={entry.image} alt={entry.location} />
+              <img className="image" src={entry.image} alt={entry.location} />
               <h4>{entry.dates}</h4>
             </div>
           )
