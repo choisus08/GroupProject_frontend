@@ -14,10 +14,10 @@ function Index(props) {
       <div className="indexForm">
         <h2>New Entry</h2>
         <Form action="/create" method="post">
-          <input type="text" name="location" placeholder="Location" />
-          <input type="text" name="landmark" placeholder="Landmark" />
-          <input type="text" name="image" placeholder="Picture" />
-          <input type="text" name="dates" placeholder="Dates" /><br></br>
+          <input className="input" type="text" name="location" placeholder="Location" />
+          <input className="input" type="text" name="landmark" placeholder="Landmark" />
+          <input className="input" type="text" name="image" placeholder="Picture" />
+          <input className="input" type="text" name="dates" placeholder="Dates" />
           <input className="createBtn" type="submit" value="Create Entry" />
         </Form>
       </div>
@@ -26,10 +26,10 @@ function Index(props) {
           return (
             <div key={entry._id}>
               <Link to={`/${entry._id}`}>
-                <h4>{entry.location}</h4>
+                <img className="image" src={entry.image} alt={entry.location} />
               </Link>
-              <h4>{entry.landmark}</h4>
-              <img className="image" src={entry.image} alt={entry.location} />
+              {/*<h4>{entry.landmark}</h4>
+              <img className="image" src={entry.image} alt={entry.location} />*/}
               <h4>{entry.dates}</h4>
             </div>
           )
