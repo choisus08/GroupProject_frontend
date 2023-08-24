@@ -17,11 +17,11 @@ function Show(props) {
         <input className="input" type="text" name="landmark" placeholder="landmark name" defaultValue={entry.landmark} />
         <input className="input" type="date" name="dates" id="dates" />
         <input className="input" type="text" name="image" placeholder="image" defaultValue={entry.image} />
-        <input className="input" type="submit" value="Update Entry" />
+        <input className="updateBtn" type="submit" value="Update Entry" />
       </Form>
 
       <Form action={`/delete/${entry._id}`} method="post">
-        <input type="submit" value="Delete Entry" />
+        <input className="deleteBtn" type="submit" value="Delete Entry" />
       </Form>
     </div>
   )
