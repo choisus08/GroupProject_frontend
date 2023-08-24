@@ -17,7 +17,7 @@ function Index(props) {
           <input className="input" type="text" name="location" placeholder="Location" />
           <input className="input" type="text" name="landmark" placeholder="Landmark" />
           <input className="input" type="text" name="image" placeholder="Picture" />
-          <input className="input" type="text" name="dates" placeholder="Dates" />
+          <input className="input" type="date" name="dates" id="dates" />
           <input className="createBtn" type="submit" value="Create Entry" />
         </Form>
       </div>

@@ -15,7 +15,7 @@ function Show(props) {
       <Form className="showForm" action={`/update/${entry._id}`} method='post'>
         <input className="input" type="text" name="location" placeholder="location name" defaultValue={entry.location} />
         <input className="input" type="text" name="landmark" placeholder="landmark name" defaultValue={entry.landmark} />
-        <input className="input" type="text" name="dates" placeholder="dates" defaultValue={entry.dates} />
+        <input className="input" type="date" name="dates" id="dates" />
         <input className="input" type="text" name="image" placeholder="image" defaultValue={entry.image} />
         <input className="input" type="submit" value="Update Entry" />
       </Form>
