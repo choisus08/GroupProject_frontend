@@ -121,11 +121,12 @@ h4 {
 .entries {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1em;
+  gap: .5em;
   text-align: center;
   margin: 2em;
   font-family: 'Nunito', sans-serif;
   position: static;
+
 }
 
 .show {
@@ -133,9 +134,9 @@ h4 {
 }
 
 .image {
-  width: 30vw;
-  height: 30vw;
-
+  width: 250px;
+  height: 250px;
+  gap: 1em;
   // object-fit: cover;
   &:hover {
     transform: scale(1.2);
