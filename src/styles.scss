@@ -24,11 +24,21 @@
 }
 
 .signup,
-.login {
+.login,
+.createBtn {
   border-radius: 25px;
   border: none;
   padding: .5em;
   width: 10em;
+  background-color: rgb(27, 104, 155);
+  color: white;
+}
+
+.logout {
+  border-radius: 25px;
+  border: none;
+  padding: .5em;
+  width: 7em;
   background-color: rgb(27, 104, 155);
   color: white;
 }
@@ -43,6 +53,10 @@
   text-align: center;
   font-size: 30px;
   font-family: 'Pacifico', cursive;
+}
+
+.logout {
+  margin-left: 4em;
 }
 
 a:link,
@@ -67,6 +81,9 @@ a:hover {
   text-align: center;
 }
 
+input {
+  margin-bottom: 5px;
+}
 
 h2,
 h3,
@@ -101,5 +118,5 @@ h4 {
 
 .showImage {
   width: 40vw;
-  height: 40vh;
+  height: 40vw;
 }
