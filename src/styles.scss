@@ -4,6 +4,8 @@
 //     background-size: cover;
 //     background-position: center;
 //     height: 100vh;
+
+
 // }
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Pacifico&family=Poppins:ital,wght@0,400;0,600;1,400&family=Roboto:ital,wght@0,300;1,300&display=swap');
 
@@ -21,6 +23,21 @@
   display: flex;
   justify-content: center;
   gap: 2em;
+}
+
+.signupButton,
+.loginButton {
+    border-radius: 25px;
+    padding: .5em;
+    width: 10em;
+    border: none;
+    background-color: rgb(252, 252, 169);
+}
+
+.input {
+    display: block;
+    margin: .5em auto;
+    border-radius: 25px;
 }
 
 .signup,
@@ -48,6 +65,7 @@
   text-align: center;
   padding: 0 0 3em 0;
 }
+
 
 .nav {
   text-align: center;
