@@ -60,6 +60,7 @@ body {
   width: 7em;
   background-color: rgb(233, 163, 98);
   color: white;
+  margin-left: 4em;
 }
 
 .deleteBtn {
@@ -84,10 +85,6 @@ body {
   font-family: 'Pacifico', cursive;
 }
 
-.logout {
-  margin-left: 4em;
-}
-
 a:link,
 a:visited {
   color: rgb(27, 104, 155)
@@ -98,7 +95,7 @@ a:hover {
 }
 
 .index {
-  background-image: url("../public/globe.jpg");
+  background-image: url("../public/globe2.png");
   background-repeat: no-repeat;
   background-size: 20%;
   background-position-x: right;
@@ -140,6 +137,7 @@ h4 {
   width: 250px;
   height: 250px;
   gap: 1em;
+
   // object-fit: cover;
   &:hover {
     transform: scale(1.2);
