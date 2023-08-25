@@ -21,16 +21,19 @@ function Index(props) {
           <input className="createBtn" type="submit" value="Create Entry" />
         </Form>
       </div>
+
+      <div className="divider"></div>
+
       <div className="entries">
         {entries.map((entry, index) => {
           return (
-            <div key={entry._id}>
+            <div className="cardContainer" key={entry._id}>
               <Link to={`/${entry._id}`}>
                 <img className="image" src={entry.image} alt={entry.location} />
               </Link>
               {/*<h4>{entry.landmark}</h4>
               <img className="image" src={entry.image} alt={entry.location} />*/}
-              <h4>{entry.dates}</h4>
+              <h4 className="cardContent">{entry.landmark}</h4>
             </div>
           )
         })}
