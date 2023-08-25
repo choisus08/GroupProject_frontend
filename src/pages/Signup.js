@@ -6,7 +6,7 @@ function Signup(props) {
     <Form className="signupInput" action="/signup" method="POST">
       <input className="input" type="text" name="username" id="username" placeholder="Username"/>
       <input className="input" type="password" name="password" id="password" placeholder="Password"/>
-      <input className="signupButton" type="submit" value="Signup" />
+      <input className="signupButton" type="submit" value="Sign Up" />
     </Form>
   </div>
 }
