@@ -14,6 +14,12 @@ body {
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
+// .mainDiv {
+//   margin: auto;
+//   position: relative;
+//   align-items: center;
+// }
+
 .sunAnimation {
   width: 60vw;
   margin: 2em auto;
@@ -24,6 +30,9 @@ body {
   display: flex;
   justify-content: center;
   gap: 2em;
+
+  // position: absolute;
+  // bottom: 50px;
 }
 
 .signupButton,
@@ -50,8 +59,8 @@ body {
   border-radius: 25px;
   border: none;
   padding: .5em;
-  width: 10em;
-  background-color: rgb(27, 104, 155);
+  width: 9em;
+  background-color:rgb(85, 164, 216);
   color: white;
 }
 
@@ -90,6 +99,7 @@ body {
   font-size: 30px;
   font-family: 'Pacifico', cursive;
   position: relative;
+  margin: .5em;
 }
 
 a:link,
@@ -122,7 +132,7 @@ h2,
 h3,
 h4 {
   font-family: 'Nunito', sans-serif;
-  color: rgb(27, 104, 155);
+  color: rgb(85, 164, 216);
 }
 
 .entries {
@@ -144,8 +154,6 @@ h4 {
   height: 190px;
   gap: 1em;
   border-radius: 25px;
-
-  // object-fit: cover;
   &:hover {
     transform: scale(1.1);
     transition: .4s ease;
@@ -175,4 +183,5 @@ h4 {
   position: absolute; 
   bottom: 5px;
   margin: 15px 20px;
+  text-shadow: 0px 0px 3px rgb(28, 27, 27);
 }

@@ -12,7 +12,7 @@ function Index(props) {
         navigate("/")
       }}>Logout</button>
       <div className="indexForm">
-        <h2>New Entry</h2>
+        <h2>Add Entry</h2>
         <Form action="/create" method="post">
           <input className="input" type="text" name="location" placeholder="Location" />
           <input className="input" type="text" name="landmark" placeholder="Landmark" />
@@ -21,7 +21,7 @@ function Index(props) {
           <input className="createBtn" type="submit" value="Create Entry" />
         </Form>
       </div>
-
+      
       <div className="divider"></div>
 
       <div className="entries">
