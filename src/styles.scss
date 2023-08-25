@@ -41,7 +41,8 @@ body {
   padding: .5em;
   width: 10em;
   border: none;
-  background-color: rgb(252, 252, 169);
+  background-color: rgb(247, 240, 141);
+  cursor: pointer;
 }
 
 .input {
@@ -62,6 +63,7 @@ body {
   width: 9em;
   background-color:rgb(85, 164, 216);
   color: white;
+  cursor: pointer;
 }
 
 .logout {
@@ -85,6 +87,7 @@ body {
   width: 7em;
   background-color: rgb(240, 67, 24);
   color: white;
+  cursor: pointer;
 }
 
 .signupForm,
