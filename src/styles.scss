@@ -63,6 +63,10 @@ body {
   background-color: rgb(233, 163, 98);
   color: white;
   margin-left: 4em;
+  margin: 0;
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 
 .deleteBtn {
@@ -85,6 +89,7 @@ body {
   text-align: center;
   font-size: 30px;
   font-family: 'Pacifico', cursive;
+  position: relative;
 }
 
 a:link,
